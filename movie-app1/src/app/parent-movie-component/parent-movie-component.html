@@ -1,0 +1,28 @@
+<!-- <app-home-component></app-home-component>
+<app-movie-list-component></app-movie-list-component>
+<app-about-component></app-about-component> -->
+<!-- <app-add-movie-component (addedmovieemiting)="addMovie($event)"></app-add-movie-component> -->
+<div class="movie-list-container">
+    @for(movie of addingmovie; track $index) {
+        <div class="movie-card" (click)="showMovieDetails(movie)">
+            <p class="movie-title">{{movie.title}}</p>
+            <p class="movie-year">{{movie.year}}</p>
+            <img class="movie-thumb" src="{{movie.imageUrl}}" style="max-width: 200px;">
+            <button class="delete-btn" (click)="deleteMovie(movie); $event.stopPropagation()">Delete Movie</button>
+        </div>
+    }
+</div>
+ 
+@if(selectedMovie) {
+    <div class="movie-details-container">
+        <h2>Movie Details</h2>
+        <h3>{{selectedMovie.title}}</h3>
+        <p><strong>Year:</strong> {{selectedMovie.year}}</p>
+        <img class="movie-detail-img" src="{{selectedMovie.imageUrl}}" style="max-width: 300px;">
+        @if(selectedMovie.description) {
+            <p><strong>Description:</strong> {{selectedMovie.description}}</p>
+        }<br>
+        <button class="close-details-btn" (click)="selectedMovie = null">Close Details</button>
+    </div>
+}
+<app-add-movie-component></app-add-movie-component>

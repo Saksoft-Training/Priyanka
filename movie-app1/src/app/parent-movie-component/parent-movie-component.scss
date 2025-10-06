@@ -1,0 +1,150 @@
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0;
+  text-align: center;
+}
+
+.movie-year {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.movie-thumb {
+  max-width: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: stretch;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+.movie-details-container {
+  border: 2px solid #007bff;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.movie-details-container h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.movie-details-container h3 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.movie-details-container p {
+  margin: 8px 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+.movie-detail-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.close-details-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-details-btn:hover {
+  background-color: #0056b3;
+}
+
+.movie-price {
+  font-size: 1.2rem;
+  color: #28a745;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: stretch;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.buy-btn:hover {
+  background-color: #218838;
+}
+
+.purchased-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: not-allowed;
+  align-self: stretch;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}

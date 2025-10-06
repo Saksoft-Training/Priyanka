@@ -1,0 +1,10 @@
+<p>movie-list-component works!</p>
+<div class="movie-list">
+    @for(movie of movieList;track $index) {
+        <div class="movie-item">
+        <h2>{{movie.title}}</h2>
+        <h3>{{movie.year}}</h3>
+        <img src="{{movie.imageUrl}}" alt="{{movie.title}}">
+        </div>
+    }
+</div>

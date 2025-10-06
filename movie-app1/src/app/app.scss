@@ -1,0 +1,45 @@
+body {
+  background-image: url('https://www.bing.com/th/id/OIP.ladqSNo4pmoOKKe5Y3sBwQHaFj?w=237&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax effect */
+
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #333;
+  color: #fff;
+}
+img {
+  width: 150px;          
+  height: 150px;         
+  border-radius: 50%;    
+  object-fit: cover;     
+  display: block;        
+  margin: 20px auto;     
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}

@@ -1,0 +1,12 @@
+
+<p>home-component works!</p>
+<div class="movie-container">
+    
+    @for(movie of recommendedMovies; track $index) {
+         <div class="movie-card">
+        <img src="{{movie.imageUrl}}" alt="Movie Kantara">
+        <h3>{{movie.title}}</h3>
+        <h4>{{movie.year}}</h4>
+        </div>
+    }
+</div>
