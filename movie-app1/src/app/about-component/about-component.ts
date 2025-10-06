@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   appName:string='Movies Angel';
   version:number=1.0;
-  author:string='Priyanka';
+  author:string='Saksoft-Training/Priyanka';
 
 }
