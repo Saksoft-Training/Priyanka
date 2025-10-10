@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HighLight } from '../high-light';
 
 @Component({
   selector: 'app-added-new-movie',

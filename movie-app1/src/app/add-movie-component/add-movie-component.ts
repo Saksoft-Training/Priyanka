@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { MovieVar } from '../models/movieVar';
 import { FormsModule } from '@angular/forms';
 import { MovieService } from '../services/movie.service';
+import { HighLight } from '../high-light';
 
 @Component({
   selector: 'app-add-movie-component',
-  imports: [FormsModule],
+  imports: [FormsModule,HighLight],
   templateUrl: './add-movie-component.html',
   styleUrl: './add-movie-component.scss'
 })
