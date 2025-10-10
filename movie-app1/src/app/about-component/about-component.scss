@@ -1,0 +1,97 @@
+.about-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px 35px;
+  /* Gradient background from a muted mauve to a soft dusty rose */
+  background: linear-gradient(135deg, #CB8589, #a77f7b);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(121, 100, 101, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1e7e6; /* Light text for contrast */
+  line-height: 1.6;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-container:hover {
+  box-shadow: 0 10px 30px rgba(121, 100, 101, 0.5);
+}
+
+.about-container h1 {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  /* Gradient text using background-clip */
+  background: linear-gradient(90deg, #a77f7b, #5d3e3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  /* Slightly lighter gradient for subheadings */
+  background: linear-gradient(135deg, #DDE8B9, #7a657d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgba(241, 231, 230, 0.5);
+  padding-bottom: 6px;
+  max-width: fit-content;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #f1e7e6cc; /* semi-transparent light */
+}
+
+.about-container p strong {
+  color: #f1e7e6;
+}
+
+.about-container ul {
+  margin-left: 20px;
+  color: #f1e7e6cc;
+  font-size: 1.1rem;
+  list-style-type: disc;
+}
+
+.about-container ul li {
+  margin-bottom: 10px;
+}
+
+.about-container a {
+  color: #d9b6b2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.about-container a:hover {
+  color: #b38480;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px 20px;
+    max-width: 90%;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-container p,
+  .about-container ul {
+    font-size: 1rem;
+  }
+}
