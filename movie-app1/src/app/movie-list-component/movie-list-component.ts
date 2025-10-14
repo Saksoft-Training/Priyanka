@@ -11,15 +11,37 @@ import { MovieService } from '../services/movie.service';
 export class MovieListComponent implements OnInit {
   movieList: MovieVar[] = [];
 
-  constructor(private movieService: MovieService) {}
+  //#region Constructor
+  /**   
+   * @param movieService - Injected instance of MovieService.
+   */
+  constructor(private movieService: MovieService) { }
 
+  //#endregion
+
+  //#region On Init
+  /**
+   *@description Retrieves the list of movies from the injected MovieService and assigns them to the movieList array.
+   */
   ngOnInit(): void {
-    // Get movies from the service
+
     this.movieList = this.movieService.getMovies();
   }
 
-  // Method to delete a movie
-  deleteMovie(movie: MovieVar): void {
+  //#endregion
+
+  //#region Delete the movie
+  /**
+ * Add a new movie to the list
+ * 
+ * @param movie of type MovieVar receives the movie to be deleted
+ * @returns void
+
+ * @summary Calls the deleteMovie method from MovieService to remove the specified movie from the list.
+ */
+  public deleteMovie(movie: MovieVar): void {
     this.movieService.deleteMovie(movie);
   }
+
+  //#endregion
 }

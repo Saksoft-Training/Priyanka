@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './about-component.scss'
 })
 export class AboutComponent {
-  appName:string='Movies Angel';
-  version:number=1.0;
-  author:string='Saksoft-Training/Priyanka';
-
+  //#region Properties
+  /**
+   * @param appName Name of the application
+   * @param version Version of the application
+   * @param author Author of the application
+   */
+  appName: string = 'Movies Angel';
+  version: number = 1.0;
+  author: string = 'Saksoft-Training/Priyanka';
+  //#endregion
 }

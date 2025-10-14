@@ -14,11 +14,18 @@ export class MovieListComponent implements OnInit {
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
-    // Get movies from the service
+    
     this.movieList = this.movieService.getMovies();
   }
 
-  // Method to delete a movie
+/**
+ * Add a new movie to the list
+ * 
+ * @param movie of type MovieVar receives the movie to be deleted
+ * @returns void
+
+ * @summary Calls the deleteMovie method from MovieService to remove the specified movie from the list.
+ */
   deleteMovie(movie: MovieVar): void {
     this.movieService.deleteMovie(movie);
   }

@@ -4,7 +4,7 @@ import { ParentMovieComponent } from './parent-movie-component/parent-movie-comp
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

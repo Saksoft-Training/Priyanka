@@ -11,47 +11,47 @@ export class HomeComponent {
 
   recommendedMovies: MovieVar[] = [{
     id: 1,
-    title: 'Kantara',
+    title: 'Kantara ',
     year: '2025',
     imageUrl: "assets/Kantara.avif"
   }, {
     id: 2,
-    title: 'They Call Him OG',
+    title: 'They Call Him OG ',
     year: '2025',
     imageUrl: 'assets/they-call-him-og.avif'
   }, {
     id: 3,
-    title: 'Jolly LLB 3',
+    title: 'Jolly LLB 3 ',
     year: '2025',
     imageUrl: 'assets/jolly-llb-3.avif'
   }, {
     id: 4,
-    title: 'Sunny sanskari ki Tulsi kumari',
+    title: 'Sunny sanskari ki Tulsi kumari ',
     year: '2025',
     imageUrl: 'assets/Sunny Sanskari.avif'
   }, {
     id: 5,
-    title: 'Shin chan',
+    title: 'Shin chan the movie',
     year: '2025',
     imageUrl: 'assets/shin-chan.avif'
   }, {
     id: 6,
-    title: 'Chainsaw Man',
+    title: 'Chainsaw Man ',
     year: '2025',
     imageUrl: 'assets/chainsaw-man.avif'
   }, {
     id: 7,
-    title: 'Homebound',
+    title: 'Homebound ',
     year: '2025',
     imageUrl: 'assets/homebound.avif'
   }, {
     id: 8,
-    title: 'Mirai',
+    title: 'Mirai ',
     year: '2025',
     imageUrl: 'assets/mirai.avif'
   }, {
     id: 9,
-    title: 'One Battle After Another',
+    title: 'One Battle After Another ',
     year: '2025',
     imageUrl: 'assets/one-battle-after-another.avif'
   }, {
