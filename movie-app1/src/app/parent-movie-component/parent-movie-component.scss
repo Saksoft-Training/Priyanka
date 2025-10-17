@@ -1,161 +1,172 @@
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$primary-text-color: #f1e7e6;
-$secondary-text-color: #f1e7e6cc;
-$gradient-bg: linear-gradient(135deg, #CB8589, #a77f7b);
-$heading-gradient: linear-gradient(90deg, #a77f7b, #5d3e3a);
-$subheading-gradient: linear-gradient(135deg, #DDE8B9, #7a657d);
-$hover-shadow: rgba(121, 100, 101, 0.5);
+// $font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+// $primary-text-color: #333333; // Darker for better readability
+// $secondary-text-color: #666666; 
+// $gradient-bg: linear-gradient(135deg, #CB8589, #a77f7b);
+// $heading-gradient: linear-gradient(90deg, #a77f7b, #5d3e3a);
+// $subheading-gradient: linear-gradient(135deg, #DDE8B9, #7a657d);
+// $hover-shadow: rgba(121, 100, 101, 0.5);
+// $card-shadow: rgba(0, 0, 0, 0.1);
+// $card-hover-shadow: rgba(0, 0, 0, 0.4);
+// $heading-color: #2c3e50; // Dark blue-gray for headings
+// $subheading-color: #7f8c8d; // Gray for subheadings
+// $delete-btn-color: #ff4d4f;
+// $delete-btn-hover: #e04444;
+// $details-border-color: #bdc3c7;
+// $details-bg-color: #ffffff;
+// $price-color: #e67e22; // Orange for price
+// $buy-btn-color: #27ae60; 
+// $buy-btn-hover: #219a52;
+// $purchased-btn-color: #95a5a6;
+
+// .movie-list-container {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 20px;
+//   padding: 20px;
+// }
+
+// .movie-card {
+//   cursor: pointer;
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   width: 220px;
+//   border-radius: 8px;
+//   box-shadow: 0 1px 6px $card-shadow;
+//   background-color: #fff;
+//   transition: box-shadow 0.3s ease;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 10px;
+//   font-family: $font-family;
+
+//   &:hover {
+//     box-shadow: 0 4px 12px $card-hover-shadow;
+//   }
+
+//   .movie-title {
+//     font-weight: 600;
+//     font-size: 1.1rem;
+//     color: $heading-color;
+//     margin: 0;
+//     text-align: center;
+//   }
+
+//   .movie-year {
+//     font-size: 0.9rem;
+//     color: $subheading-color;
+//     margin: 0;
+//   }
+
+//   .movie-thumb {
+//     max-width: 200px;
+//     border-radius: 6px;
+//     object-fit: cover;
+//     box-shadow: 0 1px 4px $card-shadow;
+//   }
+
+//   .delete-btn {
+//     background-color: $delete-btn-color;
+//     color: white;
+//     border: none;
+//     padding: 7px 14px;
+//     border-radius: 5px;
+//     font-weight: 600;
+//     cursor: pointer;
+//     align-self: stretch;
+//     transition: background-color 0.3s ease;
+
+//     &:hover {
+//       background-color: $delete-btn-hover;
+//     }
+//   }
+// }
 
 
-.movie-list-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
+// .movie-details-container {
+//   border: 2px solid $details-border-color;
+//   padding: 20px;
+//   margin: 20px;
+//   background-color: $details-bg-color;
+//   border-radius: 10px;
+//   max-width: 600px;
+//   box-shadow: 0 4px 10px $card-shadow;
+//   font-family: $font-family;
 
-.movie-card {
-  cursor: pointer;
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 220px;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px $card-shadow;
-  background-color: #fff;
-  transition: box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  font-family: $font-family;
+//  .movie-details-container-h2 {
+//     margin-top: 0;
+//     color: $details-border-color;
+//   }
 
-  &:hover {
-    box-shadow: 0 4px 12px $card-hover-shadow;
-  }
+//  .movie-details-container-h3 {
+//     margin: 10px 0;
+//     color: $heading-color;
+//   }
 
-  .movie-title {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: $heading-color;
-    margin: 0;
-    text-align: center;
-  }
+//  .movie-details-container-p {
+//     margin: 8px 0;
+//     color: $subheading-color;
+//     font-size: 1rem;
+//   }
 
-  .movie-year {
-    font-size: 0.9rem;
-    color: $subheading-color;
-    margin: 0;
-  }
+//   .movie-detail-img {
+//     max-width: 300px;
+//     width: 100%;
+//     border-radius: 8px;
+//     margin: 10px 0;
+//     object-fit: cover;
+//     box-shadow: 0 2px 8px $card-shadow;
+//   }
 
-  .movie-thumb {
-    max-width: 200px;
-    border-radius: 6px;
-    object-fit: cover;
-    box-shadow: 0 1px 4px $card-shadow;
-  }
+//   .close-details-btn {
+//     background-color: $details-border-color;
+//     color: white;
+//     border: none;
+//     padding: 10px 18px;
+//     border-radius: 6px;
+//     font-weight: 600;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
 
-  .delete-btn {
-    background-color: $delete-btn-color;
-    color: white;
-    border: none;
-    padding: 7px 14px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    align-self: stretch;
-    transition: background-color 0.3s ease;
+//     &:hover {
+//       background-color: darken($details-border-color, 20%);
+//     }
+//   }
 
-    &:hover {
-      background-color: $delete-btn-hover;
-    }
-  }
-}
+//   .movie-price {
+//     font-size: 1.2rem;
+//     color: $price-color;
+//     margin: 5px 0;
+//     font-weight: bold;
+//   }
 
+//   .buy-btn {
+//     background-color: $buy-btn-color;
+//     color: white;
+//     border: none;
+//     padding: 10px 16px;
+//     border-radius: 5px;
+//     font-weight: 600;
+//     cursor: pointer;
+//     align-self: stretch;
+//     transition: background-color 0.3s ease;
+//     font-size: 0.95rem;
 
-.movie-details-container {
-  border: 2px solid $details-border-color;
-  padding: 20px;
-  margin: 20px;
-  background-color: $details-bg-color;
-  border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 4px 10px $card-shadow;
-  font-family: $font-family;
+//     &:hover {
+//       background-color: $buy-btn-hover;
+//     }
+//   }
 
-  h2 {
-    margin-top: 0;
-    color: $details-border-color;
-  }
-
-  h3 {
-    margin: 10px 0;
-    color: $heading-color;
-  }
-
-  p {
-    margin: 8px 0;
-    color: $subheading-color;
-    font-size: 1rem;
-  }
-
-  .movie-detail-img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 8px;
-    margin: 10px 0;
-    object-fit: cover;
-    box-shadow: 0 2px 8px $card-shadow;
-  }
-
-  .close-details-btn {
-    background-color: $details-border-color;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: darken($details-border-color, 20%);
-    }
-  }
-
-  .movie-price {
-    font-size: 1.2rem;
-    color: $price-color;
-    margin: 5px 0;
-    font-weight: bold;
-  }
-
-  .buy-btn {
-    background-color: $buy-btn-color;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    align-self: stretch;
-    transition: background-color 0.3s ease;
-    font-size: 0.95rem;
-
-    &:hover {
-      background-color: $buy-btn-hover;
-    }
-  }
-
-  .purchased-btn {
-    background-color: $purchased-btn-color;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: not-allowed;
-    align-self: stretch;
-    font-size: 0.95rem;
-    opacity: 0.7;
-  }
-}
+//   .purchased-btn {
+//     background-color: $purchased-btn-color;
+//     color: white;
+//     border: none;
+//     padding: 10px 16px;
+//     border-radius: 5px;
+//     font-weight: 600;
+//     cursor: not-allowed;
+//     align-self: stretch;
+//     font-size: 0.95rem;
+//     opacity: 0.7;
+//   }
+// }

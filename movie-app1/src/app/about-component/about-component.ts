@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-about-component',
   imports: [],
   templateUrl: './about-component.html',
-  styleUrl: './about-component.scss'
+ styleUrls: ['../../styles.scss']
 })
 export class AboutComponent {
   //#region Properties

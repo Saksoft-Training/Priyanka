@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-parent-movie-component',
   imports: [AddMovieComponent, CommonModule],
   templateUrl: './parent-movie-component.html',
-  styleUrl: './parent-movie-component.scss'
+  styleUrls: ['../../styles.scss']
 })
 export class ParentMovieComponent implements OnInit {
   //#region variables
@@ -22,7 +22,6 @@ export class ParentMovieComponent implements OnInit {
   addingmovie: MovieVar[] = [];
   selectedMovie: MovieVar | null = null;
   //#endregion
-
   //#region Constructor
   /**
    * @param movieService of type MovieService receives the service
@@ -31,25 +30,22 @@ export class ParentMovieComponent implements OnInit {
    */
   constructor(private movieService: MovieService) { }
   //#endregion
-
   //#region ngOnInit
   /**
    * @summary Initialize the component by getting movies from the service
    */
   ngOnInit(): void {
     // Get movies from the service
-    this.addingmovie = this.movieService.getMovies();
+
   }
   //#endregion
-
   //#region delete the movie that selected
   /**
- * Add a new movie to the list
- * 
- * @param movie of type MovieVar receives the movie to be deleted
-
- * @summary Calls the deleteMovie method from MovieService to remove the movie from the list.Delete movie using the service also Clear selected movie if it was deleted.
- */
+  * Add a new movie to the list
+   * 
+  * @param movie of type MovieVar receives the movie to be deleted
+  * @summary Calls the deleteMovie method from MovieService to remove the movie from the list.Delete movie using the service also Clear selected movie if it was deleted.
+  */
   public deleteMovie(movie: MovieVar): void {
 
     this.movieService.deleteMovie(movie);
@@ -58,9 +54,7 @@ export class ParentMovieComponent implements OnInit {
       this.selectedMovie = null;
     }
   }
-
   //#endregion
-
   //#region showMovieDetails
   /**
    * @params movie of type MovieVar receives the movie
@@ -71,6 +65,5 @@ export class ParentMovieComponent implements OnInit {
     this.selectedMovie = movie;
 
   }
-
   //#endregion
 }

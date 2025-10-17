@@ -1,94 +1,94 @@
-$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$primary-text-color: #f1e7e6;
-$secondary-text-color: #f1e7e6cc;
-$gradient-bg: linear-gradient(135deg, #CB8589, #a77f7b);
-$heading-gradient: linear-gradient(90deg, #a77f7b, #5d3e3a);
-$subheading-gradient: linear-gradient(135deg, #DDE8B9, #7a657d);
-$hover-shadow: rgba(121, 100, 101, 0.5);
-$default-shadow: rgba(121, 100, 101, 0.3);
+// $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+// $primary-text-color: #f1e7e6;
+// $secondary-text-color: #f1e7e6cc;
+// $gradient-bg: linear-gradient(135deg, #CB8589, #a77f7b);
+// $heading-gradient: linear-gradient(90deg, #a77f7b, #5d3e3a);
+// $subheading-gradient: linear-gradient(135deg, #DDE8B9, #7a657d);
+// $hover-shadow: rgba(121, 100, 101, 0.5);
+// $default-shadow: rgba(121, 100, 101, 0.3);
 
-.about-container {
-  max-width: 650px;
-  margin: 40px auto;
-  padding: 25px 35px;
-  background: $gradient-bg;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px $default-shadow;
-  color: $primary-text-color;
-  text-align: left;
-  transition: box-shadow 0.3s ease;
+// .about-container {
+//   max-width: 650px;
+//   margin: 40px auto;
+//   padding: 25px 35px;
+//   background: $gradient-bg;
+//   border-radius: 12px;
+//   box-shadow: 0 6px 20px $default-shadow;
+//   color: $primary-text-color;
+//   text-align: left;
+//   transition: box-shadow 0.3s ease;
 
-  &:hover {
-    box-shadow: 0 10px 30px $hover-shadow;
-  }
+//   &:hover {
+//     box-shadow: 0 10px 30px $hover-shadow;
+//   }
 
-  h1 {
-    font-size: 2.4rem;
-    margin-bottom: 25px;
-    font-weight: 700;
-    background: $heading-gradient;
-    text-align: center;
-  }
+//   .about-container-h1 {
+//     font-size: 2.4rem;
+//     margin-bottom: 25px;
+//     font-weight: 700;
+//     background: $heading-gradient;
+//     text-align: center;
+//   }
 
-  h2 {
-    font-size: 1.6rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    background: $subheading-gradient;
-    border-bottom: 2px solid rgba(241, 231, 230, 0.5);
-    padding-bottom: 6px;
-    max-width: fit-content;
-  }
+//    .about-container-h2 {
+//     font-size: 1.6rem;
+//     margin-top: 30px;
+//     margin-bottom: 15px;
+//     font-weight: 600;
+//     background: $subheading-gradient;
+//     border-bottom: 2px solid rgba(241, 231, 230, 0.5);
+//     padding-bottom: 6px;
+//     max-width: fit-content;
+//   }
 
-  p {
-    font-size: 1.1rem;
-    margin: 12px 0;
-    color: $secondary-text-color;
+//   .about-container-p {
+//     font-size: 1.1rem;
+//     margin: 12px 0;
+//     color: $secondary-text-color;
 
-    strong {
-      color: $primary-text-color;
-    }
-  }
+//     .about-container-strong {
+//       color: $primary-text-color;
+//     }
+//   }
 
-  ul {
-    margin-left: 20px;
-    color: $secondary-text-color;
-    font-size: 1.1rem;
-    list-style-type: disc;
+//   .about-container-ul {
+//     margin-left: 20px;
+//     color: $secondary-text-color;
+//     font-size: 1.1rem;
+//     list-style-type: disc;
 
-    li {
-      margin-bottom: 10px;
-    }
-  }
+//     .about-container-li {
+//       margin-bottom: 10px;
+//     }
+//   }
 
-  a {
-    color: #d9b6b2;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+//   a {
+//     color: #d9b6b2;
+//     text-decoration: none;
+//     font-weight: 600;
+//     transition: color 0.3s ease;
 
-    &:hover {
-      color: #b38480;
-      text-decoration: underline;
-    }
-  }
+//     &:hover {
+//       color: #b38480;
+//       text-decoration: underline;
+//     }
+//   }
 
-  @media (max-width: 480px) {
-    padding: 20px;
-    max-width: 90%;
+//   @media (max-width: 480px) {
+//     padding: 20px;
+//     max-width: 90%;
 
-    h1 {
-      font-size: 2rem;
-    }
+//      .about-container-h1 {
+//       font-size: 2rem;
+//     }
 
-    h2 {
-      font-size: 1.3rem;
-    }
+//    .about-container-h2{
+//       font-size: 1.3rem;
+//     }
 
-    p,
-    ul {
-      font-size: 1rem;
-    }
-  }
-}
+//     .about-container-h2,
+//    .about-container-ul {
+//       font-size: 1rem;
+//     }
+//   }
+// }

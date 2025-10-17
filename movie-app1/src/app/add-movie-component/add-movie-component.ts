@@ -8,25 +8,21 @@ import { HighLight } from '../high-light';
   selector: 'app-add-movie-component',
   imports: [FormsModule, HighLight],
   templateUrl: './add-movie-component.html',
-  styleUrl: './add-movie-component.scss'
+  styleUrls: ['../../styles.scss']
 })
 export class AddMovieComponent {
-
   //#region Properties
   title: string = '';
   year: string = '';
   imageUrl: string = '';
   //#endregion
-
   //#region Constructor
-
   /**
    * Creates an instance of AddMovieComponent.
    * @param {MovieService} movieService - The service used for managing movies
    */
   constructor(private movieService: MovieService) { }
   //#endregion
- 
   //#region add Function adds movie 
   /**
    * @summary propoerties are initialized
@@ -40,12 +36,9 @@ export class AddMovieComponent {
       imageUrl: this.imageUrl
     };
     this.movieService.addMovie(newmovie);
-
     this.title = '';
     this.year = '';
     this.imageUrl = '';
-
   }
-
   //#endRegion
 }

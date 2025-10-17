@@ -15,12 +15,12 @@
 
 @if(selectedMovie) {
 <div class="movie-details-container">
-    <h2>Movie Details</h2>
-    <h3>{{selectedMovie.title}}</h3>
-    <p><strong>Year:</strong> {{selectedMovie.year}}</p>
+    <h2 class="movie-details-container-h2">Movie Details</h2>
+    <h3 class="movie-details-container-h3">{{selectedMovie.title}}</h3>
+    <p class="movie-details-container-p"><strong>Year:</strong> {{selectedMovie.year}}</p>
     <img class="movie-detail-img" src="{{selectedMovie.imageUrl}}" style="max-width: 300px;">
     @if(selectedMovie.description) {
-    <p><strong>Description:</strong> {{selectedMovie.description}}</p>
+    <p class="movie-details-container-p"><strong>Description:</strong> {{selectedMovie.description}}</p>
     }<br>
     <button class="close-details-btn" (click)="selectedMovie = null">Close Details</button>
 </div>

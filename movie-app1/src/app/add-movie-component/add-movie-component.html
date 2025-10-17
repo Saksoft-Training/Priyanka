@@ -1,13 +1,13 @@
 <p>add-movie-component works!</p>
-<div>
-    <label for="title">Title:</label><br />
-    <input type="text" id="title" [(ngModel)]="title" /><br />
+<div class="add-container">
+    <label for="title" class="add-container-label">Title:</label><br />
+    <input type="text" class="add-container-input" id="title" [(ngModel)]="title" /><br />
 
-    <label for="year">Year:</label>
-    <input type="number" id="year" [(ngModel)]="year" appHighLight /><br />
+    <label for="year" class="add-container-label">Year:</label>
+    <input type="number" class="add-container-input" id="year" [(ngModel)]="year" appHighLight /><br />
 
-    <label for="image">Image URL:</label>
-    <input type="url" id="image" [(ngModel)]="imageUrl" /><br />
+    <label for="image" class="add-container-label">Image URL:</label>
+    <input type="url"  class="add-container-input" id="image" [(ngModel)]="imageUrl" /><br />
 
-    <button (click)="add()">Add Movie</button>
+    <button (click)="add()" class="add-container-button">Add Movie</button>
 </div>

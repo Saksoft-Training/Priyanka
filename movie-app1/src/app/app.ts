@@ -6,7 +6,7 @@ import { ParentMovieComponent } from './parent-movie-component/parent-movie-comp
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['../styles.scss']
 })
 export class App {
   protected readonly title = signal('movie-app1');
