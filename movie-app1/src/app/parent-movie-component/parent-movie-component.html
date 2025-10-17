@@ -1,7 +1,3 @@
-<!-- <app-home-component></app-home-component>
-<app-movie-list-component></app-movie-list-component>
-<app-about-component></app-about-component> -->
-<!-- <app-add-movie-component (addedmovieemiting)="addMovie($event)"></app-add-movie-component> -->
 <div class="movie-list-container">
     @for(movie of addingmovie; track $index) {
     <div class="movie-card" (click)="showMovieDetails(movie)">
@@ -12,7 +8,6 @@
     </div>
     }
 </div>
-
 @if(selectedMovie) {
 <div class="movie-details-container">
     <h2 class="movie-details-container-h2">Movie Details</h2>

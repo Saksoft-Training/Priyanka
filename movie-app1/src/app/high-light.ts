@@ -6,10 +6,8 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class HighLight {
   //#region Constructor 
   /**
-   * 
    * @param element reference to the element on which the directive was applied.
    * This is provided by angular through the DI system.
-   *
    *@summary We use the nativeElement property of the ElementRef to access the underlying DOM element
    */
   constructor(private element: ElementRef) {
