@@ -1,0 +1,513 @@
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-text-color: #f1e7e6;
+$secondary-text-color: #f1e7e6cc;
+$gradient-bg: linear-gradient(135deg, #CB8589, #a77f7b);
+$heading-gradient: linear-gradient(90deg, #a77f7b, #5d3e3a);
+$subheading-gradient: linear-gradient(135deg, #DDE8B9, #7a657d);
+$hover-shadow: rgba(121, 100, 101, 0.5);
+$default-shadow: rgba(121, 100, 101, 0.3);
+$border-color: rgba(255, 255, 255, 0.3);
+$card-shadow: rgba(0, 0, 0, 0.1);
+$card-hover-shadow: rgba(0, 0, 0, 0.4);
+$delete-btn-color: #ff4d4f;
+$delete-btn-hover: #e04444;
+$details-border-color: #ccc;
+$details-bg-color: #f9f9f9;
+$price-color: #ffcc00;
+$buy-btn-color: #28a745;
+$buy-btn-hover: #218838;
+$purchased-btn-color: #6c757d;
+$nav-bg-color: #f0f0f0;
+$nav-border-color: #ccc;
+$nav-hover-bg: #333;
+$nav-hover-color: #fff;
+$img-shadow: rgba(0, 0, 0, 0.2);
+//addmovie component 
+$font-family-add: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-text-color-add: #f1e7e6;
+$secondary-text-color-add: #444;
+$gradient-bg-add: linear-gradient(135deg, #CB8589, #a77f7b);
+$heading-gradient-add: linear-gradient(90deg, #a77f7b, #5d3e3a);
+$subheading-gradient-add: linear-gradient(135deg, #DDE8B9, #7a657d);
+$hover-shadow-add: rgba(121, 100, 101, 0.5);
+$default-shadow-add: rgba(0, 0, 0, 0.1);
+//home comonent
+$font-family-home: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-text-color-home: #f1e7e6;
+$secondary-text-color-home: #f1e7e6cc;
+$gradient-bg-home: linear-gradient(135deg, #CB8589, #a77f7b);
+$hover-shadow-home: rgba(121, 100, 101, 0.5);
+$heading-gradient-home: linear-gradient(90deg, #a77f7b, #5d3e3a);
+$subheading-gradient-home: linear-gradient(135deg, #DDE8B9, #7a657d);
+//MovieList component
+$primary-text-color-list: #f1e7e6;
+$secondary-text-color-list: #f1e7e6cc;
+$gradient-bg-list: linear-gradient(135deg, #CB8589, #a77f7b);
+$heading-gradient-list: linear-gradient(90deg, #a77f7b, #5d3e3a);
+$subheading-gradient-list: linear-gradient(135deg, #DDE8B9, #7a657d);
+$hover-shadow-list: rgba(121, 100, 101, 0.5);
+$default-shadow-list: rgba(0, 0, 0, 0.1);
+$border-color-list: rgba(255, 255, 255, 0.3);
+//app component
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-text-color-app: #f1e7e6;
+$secondary-text-color-app: #0f0f0f;
+$accent-color-app: #ff6b6b;
+$nav-bg-color-app: #f0f0f0;
+$nav-border-color-app: #ccc;
+$nav-hover-bg-app: #333;
+$nav-hover-color-app: #fff;
+$img-shadow-app: rgba(0, 0, 0, 0.2);
+
+//  GLOBAL STYLES
+.app-body {
+  background-image: url('https://www.bing.com/th/id/OIP.ladqSNo4pmoOKKe5Y3sBwQHaFj?w=237&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: $font-family;
+  color: $primary-text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+// About Component
+.about-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px 35px;
+  background: $gradient-bg;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px $default-shadow;
+  color: $primary-text-color;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 30px $hover-shadow;
+  }
+}
+
+.about-title {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+  background: $heading-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.about-subtitle {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  background: $subheading-gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-bottom: 2px solid rgba(241, 231, 230, 0.5);
+  padding-bottom: 6px;
+  max-width: fit-content;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: $secondary-text-color;
+}
+
+.about-strong {
+  color: $primary-text-color;
+}
+
+.about-list {
+  margin-left: 20px;
+  color: $secondary-text-color;
+  font-size: 1.1rem;
+  list-style-type: disc;
+}
+
+.about-list-item {
+  margin-bottom: 10px;
+}
+
+.about-link {
+  color: #d9b6b2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #b38480;
+    text-decoration: underline;
+  }
+}
+
+// Add Movie Component
+.add-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px 25px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px $default-shadow-add;
+  font-family: $font-family-add;
+  color: $primary-text-color-add;
+}
+
+.add-container-label {
+  font-weight: 600;
+  margin-top: 12px;
+  display: block;
+  color: $secondary-text-color-add;
+}
+
+.add-container-input {
+
+  &[type="text"],
+  &[type="number"],
+  &[type="url"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 6px 0 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: $font-family-add;
+    color: $primary-text-color-add;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+}
+
+.add-container-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: $primary-text-color-add;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: $font-family-add;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px $hover-shadow-add;
+  }
+}
+
+// Home Component
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: $gradient-bg-home;
+}
+
+.movie-card {
+  background: $gradient-bg-home;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  color: $primary-text-color-home;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px $hover-shadow-home;
+  }
+
+  .movie-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .movie-card-h3 {
+    margin: 12px 0 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $primary-text-color-home;
+    background: $heading-gradient-home;
+  }
+
+  .movie-card-h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: $secondary-text-color-home;
+    font-weight: 500;
+  }
+}
+
+// Movie List Component
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  font-family: $font-family-home;
+}
+
+.movie-item {
+  background: $gradient-bg-list;
+  border: 1px solid $border-color-list;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px $default-shadow-list;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 16px $hover-shadow-list;
+    transform: translateY(-6px);
+  }
+
+  .movie-item-h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    background: $heading-gradient-list;
+  }
+
+  .movie-item-h3 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color: $secondary-text-color-list;
+  }
+
+  .movie-item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+// Parent Movie Component
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.parent-movie-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px $card-shadow;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: $font-family;
+
+  &:hover {
+    box-shadow: 0 4px 12px $card-hover-shadow;
+  }
+}
+
+.parent-movie-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+.parent-movie-year {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.movie-thumb {
+  max-width: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 1px 4px $card-shadow;
+}
+
+.delete-btn {
+  background-color: $delete-btn-color;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: stretch;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $delete-btn-hover;
+  }
+}
+
+.movie-details-container {
+  border: 2px solid $details-border-color;
+  padding: 20px;
+  margin: 20px;
+  background-color: $details-bg-color;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px $card-shadow;
+  font-family: $font-family;
+}
+
+.movie-details-title {
+  margin-top: 0;
+  color: $details-border-color;
+}
+
+.movie-details-subtitle {
+  margin: 10px 0;
+  color: #333;
+}
+
+.movie-details-text {
+  margin: 8px 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.movie-detail-image {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: cover;
+  box-shadow: 0 2px 8px $card-shadow;
+}
+
+.close-details-btn {
+  background-color: #999;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #777;
+  }
+}
+
+.movie-price {
+  font-size: 1.2rem;
+  color: $price-color;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: $buy-btn-color;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: stretch;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+
+  &:hover {
+    background-color: $buy-btn-hover;
+  }
+}
+
+.purchased-btn {
+  background-color: $purchased-btn-color;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: not-allowed;
+  align-self: stretch;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+// App Component
+body {
+  background-image: url('https://www.bing.com/th/id/OIP.ladqSNo4pmoOKKe5Y3sBwQHaFj?w=237&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: $nav-bg-color-app;
+  border-bottom: 1px solid $nav-border-color-app;
+
+  .nav-menu-li {
+    display: inline;
+  }
+
+  .nav-menu-li-a {
+    text-decoration: none;
+    color: $secondary-text-color-app;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background-color: $nav-hover-bg-app;
+      color: $nav-hover-color-app;
+    }
+  }
+}
+
+.body-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px $img-shadow-app;
+}
